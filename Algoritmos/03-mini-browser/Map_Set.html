@@ -1,0 +1,25 @@
+<Script>
+//Teste com MAP: baseado num id sempre sobrescreve o ultimo item de mesma chave
+var  TesteMap = new Map();
+
+TesteMap.set('17/06/2022 11:30', {Title: 'Globo.com', url: 'www.globo.com'});
+TesteMap.set('17/06/2022 11:30', {Title: 'Terra.com', url: 'www.terra.com'});
+TesteMap.set('17/06/2022 11:32', {Title: 'Facebook.com', url: 'www.Facebook.com'});
+TesteMap.set('17/06/2022 11:33', {Title: 'Google.com', url: 'www.google.com'});
+var resultado = TesteMap;
+
+console.log(resultado);
+
+//Teste com SET: Estrutura que faz controle automatico de duplicatas
+var novoSet = new Set();
+novoSet.add('backnend');
+novoSet.add('frontend');
+novoSet.add('mobile');
+novoSet.add('mobile');
+novoSet.add('mobile');
+novoSet.add('mobile');
+
+resultado = novoSet;
+console.log(resultado);
+
+</Script>
