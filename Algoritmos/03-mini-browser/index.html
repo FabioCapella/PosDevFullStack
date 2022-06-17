@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Browser Experimental</title>
+</head>
+<body>
+    
+
+<script>
+    //Objetos: representa coisas com multiplos atributos
+
+    var aba1 = {
+        titulo: "Titulo aba1",
+        url: "http://www.globo.com"
+    };
+
+    var aba2 = {
+        titulo: "Titulo aba2",
+        url: "http://www.terra.com"
+    };
+
+    //ENTRADA
+    //Arrays: listas de coisas
+    const abas = [
+        aba1,
+        aba2
+    ];
+
+    //PROCESSAMENTO
+for(aba of abas) {
+    console.log(aba.titulo);
+    var htmltAtual = document.body.innerHTML;
+    document.body.innerHTML = htmltAtual + `<li><a href="${aba.url}">${aba.titulo}</li>`;
+}
+
+    //OUTPUT
+</script>
+
+</body>
+</html>

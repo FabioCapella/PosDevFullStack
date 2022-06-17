@@ -1,0 +1,59 @@
+<script>
+console.log('[Fila/Qeue]');
+//Fila: FIFO - First In First Out
+// Ordem importa
+// Qualquer tipo de dado
+
+var fila =[
+'script.js',
+'imagem.jpg',
+'style.css'
+];
+
+//adicionar na fila
+fila.push('dog.png');
+//remove o primeiro
+fila.shift();
+
+//receita pra criar filas
+// - enqueue
+// - dequeue
+
+//Classe: receita para criar objetos
+class Queue {
+    constructor() {
+        this.data = [];
+    }
+
+    enqueue(item) {
+        this.data.push(item);
+    }
+
+    dequeue() {
+        this.data.shift();
+    }
+
+    print () {
+        console.log(this.data);
+
+    }
+}
+
+
+var requests = new Queue();
+
+requests.enqueue("scripts.js");
+requests.dequeue("scripts.js");
+requests.enqueue("style.css");
+
+requests.enqueue("imagem.png");
+
+requests.enqueue("doguinho.png");
+
+requests.print();
+requests.enqueue('Novo item');
+
+requests.print();
+
+
+</script>
