@@ -1,7 +1,7 @@
 console.log("Hello World!");
 console.log("Fundamentos de Computação e Algoritmos");
 
-function avaliaParidade(limiteSuperior ){
+/*function avaliaParidade(limiteSuperior ){
 
     for(let i=0; i<limiteSuperior; i++){
         if(i%2==1)
@@ -12,4 +12,16 @@ function avaliaParidade(limiteSuperior ){
     }    
 }
 
-avaliaParidade(10);
+avaliaParidade(10);*/
+
+
+var fibonacci = new Array();
+
+fibonacci[1] = 1;
+fibonacci[2] = 2;
+
+for (let cont = 3; cont < 20; cont++){
+    fibonacci[cont] = fibonacci[cont-1] + fibonacci[cont-2];
+}
+
+console.log( fibonacci.join());
