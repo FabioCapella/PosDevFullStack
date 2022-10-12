@@ -1,0 +1,33 @@
+<script>
+ /*   //Criação de classe por atribuiçãi simples
+var pessoaSimples = {nome: "Fabio", idade: 45, falar: function() { console.log("Ola")}};
+
+//Classe com fábrica
+function criarPessoaFactory(nome, anoDeNascimento, profissao) {
+    return {
+        nome ,
+        anoDeNascimento,
+        profissao,
+        calculaIdade: function() {
+            return new Date().getFullYear() - anoDeNascimento;
+         }
+    }
+}
+
+var pessoaFabricada = criarPessoaFactory("Fabio Capella", 1977, "Analista");
+console.log(pessoaFabricada.calculaIdade());*/
+
+function Pessoa(nome, ano, prof) {
+    this.nome = nome;
+    this.anoDeNascimento = ano;
+    this.profissao = prof;
+    this.calculaIDade = function () {
+        return new Date().getFullYear() - this.anoDeNascimento}
+}
+
+
+var p1 = new Pessoa();
+console.log(p1.calculaIDade());
+//
+
+</script>

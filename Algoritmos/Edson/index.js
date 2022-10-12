@@ -15,7 +15,7 @@ console.log("Fundamentos de Computação e Algoritmos");
 avaliaParidade(10);*/
 
 
-var fibonacci = new Array();
+/*var fibonacci = new Array();
 
 fibonacci[1] = 1;
 fibonacci[2] = 2;
@@ -24,4 +24,13 @@ for (let cont = 3; cont < 20; cont++){
     fibonacci[cont] = fibonacci[cont-1] + fibonacci[cont-2];
 }
 
-console.log( fibonacci.join());
+console.log( fibonacci.join());*/
+
+var x= 0;
+var n=0
+while(n<3){
+    n=n+1;
+    x = n + x;
+}
+
+console.log(x);
